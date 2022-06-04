@@ -1,24 +1,13 @@
-import {React, useState} from "react";
+import {React} from "react";
+//import Counter from "./components/Counter";
+import ListItem from "./components/ListItem";
+
+import '../src/styles/app.css'
 
 function App() {
-  const [likes, setLikes] = useState(1)
   return (
     <div className="App">
-      <h1>{likes}</h1>
-      <button
-        onClick={() => {
-          setLikes(likes + 1);
-        }}
-      >
-        increment
-      </button>
-      <button
-        onClick={() => {
-          setLikes(likes - 1);
-        }}
-      >
-        decrement
-      </button>
+      <ListItem id='1' title='React is cool' description='I love react' ></ListItem>
     </div>
   );
 }
