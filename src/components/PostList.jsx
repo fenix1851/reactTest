@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import ListItem from "./ListItem";
 
 function PostList({posts, title, remove}) {
-  console.log(remove)
+
   return (
     <div>
       <h1 style={{ textAlign: "center" }}>{title}</h1>
